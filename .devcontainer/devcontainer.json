@@ -41,7 +41,19 @@
 				"oderwat.indent-rainbow",
 				"BracketPairColorDLW.bracket-pair-color-dlw",
 				"expo.vscode-expo-tools",
-				"msjsdiag.vscode-react-native"
+				"msjsdiag.vscode-react-native",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"christian-kohler.path-intellisense",
+				"bradlc.vscode-tailwindcss",
+				"dsznajder.es7-react-js-snippets",
+				"pranaygp.vscode-css-peek",
+				"ecmel.vscode-html-css",
+				"sidthesloth.html5-boilerplate",
+				"esbenp.prettier-vscode",
+				"xabikos.JavaScriptSnippets",
+				"ms-vscode.vscode-typescript-next",
+				"batisteo.vscode-django",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	}
