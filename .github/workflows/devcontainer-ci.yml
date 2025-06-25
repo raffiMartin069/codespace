@@ -1,0 +1,42 @@
+name: DevContainer CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test-devcontainer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    # Set up Docker Buildx (for cache + advanced builds)
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v3
+
+    # Build devcontainer image
+    - name: Build Devcontainer Image
+      run: |
+        docker buildx build \
+          --file .devcontainer/Dockerfile \
+          --tag devcontainer-test:ci \
+          .
+
+    # Start services (if docker-compose is used)
+    - name: Start Devcontainer with Compose
+      run: |
+        docker-compose -f .devcontainer/docker-compose.yml up -d
+
+    # Run init.sh manually inside container to validate it works
+    - name: Run init.sh
+      run: |
+        CONTAINER_ID=$(docker ps -qf "ancestor=devcontainer-test:ci")
+        docker exec $CONTAINER_ID bash -c "/workspaces/init.sh"
+
+    # Optional: Run diagnostics or basic tests
+    - name: Verify container health
+      run: |
+        docker ps --filter "status=running"
