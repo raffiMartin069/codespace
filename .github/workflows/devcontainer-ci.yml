@@ -21,7 +21,7 @@ jobs:
     - name: Execute init.sh inside docker container
       run: |
         CONTAINER_ID=$(docker ps -a -f "name=devcontainer-app-1" --format "{{.ID}}")
-        docker exec -it $CONTAINER_ID bash -c "/workspaces/codespace/.devcontainer/init.sh"
+        docker exec $CONTAINER_ID bash -c "/workspaces/codespace/.devcontainer/init.sh"
 
     # Optional: Check running status
     - name: Check container health
