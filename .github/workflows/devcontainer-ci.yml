@@ -1,0 +1,32 @@
+name: DevContainer CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  test-devcontainer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    # Start services (Build + Run)
+    - name: Build and start devcontainer
+      run: |
+        docker compose -f .devcontainer/docker-compose.yml up -d --build
+
+    - name: Execute init.sh inside docker container
+      run: |
+        CONTAINER_ID=$(docker ps -a -f "name=devcontainer-app-1" --format "{{.ID}}")
+        docker exec $CONTAINER_ID bash -c "/workspaces/codespace/.devcontainer/init.sh"
+
+    # Optional: Check running status
+    - name: Check container health
+      run: docker ps --filter "status=running"
+
+    - name: Shut down
+      if: always()
+      run: docker compose -f .devcontainer/docker-compose.yml down
