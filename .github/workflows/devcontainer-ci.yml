@@ -28,7 +28,7 @@ jobs:
     # Start services (if docker-compose is used)
     - name: Start Devcontainer with Compose
       run: |
-        docker-compose -f .devcontainer/docker-compose.yml up -d
+        docker compose -f .devcontainer/docker-compose.yml up -d
 
     # Run init.sh manually inside container to validate it works
     - name: Run init.sh
