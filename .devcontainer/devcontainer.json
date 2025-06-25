@@ -13,7 +13,8 @@
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/devcontainers/features/go:1": {},
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/sshd:1": {}
+		"ghcr.io/devcontainers/features/sshd:1": {},
+		"ghcr.io/devcontainers-extra/features/supabase-cli:1": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -54,7 +55,8 @@
 				"ms-vscode.vscode-typescript-next",
 				"batisteo.vscode-django",
 				"streetsidesoftware.code-spell-checker",
-				"hossaini.bootstrap-intellisense"
+				"hossaini.bootstrap-intellisense",
+				"denoland.vscode-deno"
 			]
 		}
 	}
