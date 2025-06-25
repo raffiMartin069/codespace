@@ -18,6 +18,11 @@ jobs:
       run: |
         docker compose -f .devcontainer/docker-compose.yml up -d --build
 
+    - name: Execute init.sh inside docker container
+      run: |
+        CONTAINER_ID=$(docker ps -a -f "name=devcontainer-app-1" --format "{{.ID}}")
+        docker exec -it $CONTAINER_ID bash -c "/workspaces/codespace/.devcontainer/init.sh"
+
     # Optional: Check running status
     - name: Check container health
       run: docker ps --filter "status=running"
