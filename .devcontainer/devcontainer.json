@@ -58,7 +58,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"hossaini.bootstrap-intellisense",
 				"denoland.vscode-deno",
-				"ritwickdey.LiveServer"
+				"ritwickdey.LiveServer",
+				"tomoki1207.pdf"
 			]
 		}
 	}
