@@ -57,7 +57,8 @@
 				"batisteo.vscode-django",
 				"streetsidesoftware.code-spell-checker",
 				"hossaini.bootstrap-intellisense",
-				"denoland.vscode-deno"
+				"denoland.vscode-deno",
+				"ritwickdey.LiveServer"
 			]
 		}
 	}
