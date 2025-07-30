@@ -59,7 +59,10 @@
 				"hossaini.bootstrap-intellisense",
 				"denoland.vscode-deno",
 				"ritwickdey.LiveServer",
-				"tomoki1207.pdf"
+				"tomoki1207.pdf",
+				"humao.rest-client",
+				"GitHub.vscode-github-actions",
+				"GitHub.vscode-pull-request-github"
 			]
 		}
 	}
