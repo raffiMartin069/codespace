@@ -64,7 +64,11 @@
 				"GitHub.vscode-github-actions",
 				"GitHub.vscode-pull-request-github",
 				"teabyii.ayu",
-				"dracula-theme.theme-dracula"
+				"dracula-theme.theme-dracula",
+				"GrapeCity.gc-excelviewer",
+				"ahmadawais.shades-of-purple",
+				"WallabyJs.console-ninja",
+				"AykutSarac.jsoncrack-vscode"
 			]
 		}
 	}
