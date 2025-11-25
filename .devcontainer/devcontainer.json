@@ -32,7 +32,6 @@
 			"extensions": [
 				"KevinRose.vsc-python-indent",
 				"njpwerner.autodocstring",
-				"golang.Go",
 				"PKief.material-icon-theme",
 				"mhutchie.git-graph",
 				"donjayamanne.githistory",
@@ -44,14 +43,12 @@
 				"BracketPairColorDLW.bracket-pair-color-dlw",
 				"expo.vscode-expo-tools",
 				"msjsdiag.vscode-react-native",
-				"VisualStudioExptTeam.vscodeintellicode",
 				"christian-kohler.path-intellisense",
 				"bradlc.vscode-tailwindcss",
 				"dsznajder.es7-react-js-snippets",
 				"pranaygp.vscode-css-peek",
 				"ecmel.vscode-html-css",
 				"sidthesloth.html5-boilerplate",
-				"esbenp.prettier-vscode",
 				"xabikos.JavaScriptSnippets",
 				"ms-vscode.vscode-typescript-next",
 				"batisteo.vscode-django",
@@ -60,7 +57,22 @@
 				"denoland.vscode-deno",
 				"ritwickdey.LiveServer",
 				"tomoki1207.pdf",
-				"humao.rest-client"
+				"humao.rest-client",
+				"GitHub.vscode-github-actions",
+				"GitHub.vscode-pull-request-github",
+				"GrapeCity.gc-excelviewer",
+				"WallabyJs.console-ninja",
+				"AykutSarac.jsoncrack-vscode",
+				"shd101wyy.markdown-preview-enhanced",
+				"yzhang.markdown-all-in-one",
+				"ms-python.isort",
+				"aaron-bond.better-comments",
+				"ms-python.black-formatter",
+				"formulahendry.auto-rename-tag",
+				"mechatroner.rainbow-csv",
+				"formulahendry.auto-close-tag",
+				"mikestead.dotenv",
+				"hediet.vscode-drawio"
 			]
 		}
 	}

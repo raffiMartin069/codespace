@@ -1,7 +1,4 @@
-
-*/
-
-!.devcontainer
-!.github
-!.vscode
-!README.md
+.venv/
+chatbot/
+barug/
+pdf/
